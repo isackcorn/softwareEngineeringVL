@@ -3,10 +3,8 @@ from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 
 @st.cache_resource
 
-model = AutoModelForQuestionAnswering.from_pretrained("AndyChiang/Pre-CoFactv3-Question-Answering")
-tokenizer = AutoTokenizer.from_pretrained("AndyChiang/Pre-CoFactv3-Question-Answering")
-
-QA = pipeline("question-answering", model=model, tokenizer=tokenizer)
+def get_model():
+    return pipeline("question-answering", model=AutoModelForQuestionAnswering.from_pretrained("AndyChiang/Pre-CoFactv3-Question-Answering"), tokenizer=AutoTokenizer.from_pretrained("AndyChiang/Pre-CoFactv3-Question-Answering"))
 
 st.title("Модель ответов на вопросы")
 
@@ -16,5 +14,6 @@ process = st.button("Запустить")
 
 if process:
     QA_input = { 'context' : context, 'question': question, }
+    QA = get_model()
     answer = QA(QA_input)
     st.write(answer)
