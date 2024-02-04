@@ -10,3 +10,5 @@
 [Третье задание](https://github.com/isackcorn/softwareEngineeringVL/tree/main/Homework_3)
 
 [Четвертое задание](https://github.com/isackcorn/softwareEngineeringVL/tree/main/Homework_4)
+
+[Пятое задание](https://github.com/isackcorn/softwareEngineeringVL/tree/main/Homework_5)
