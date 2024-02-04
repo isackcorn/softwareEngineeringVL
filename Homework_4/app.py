@@ -1,6 +1,8 @@
 import streamlit as st
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 
+@st.cache_resource
+
 model = AutoModelForQuestionAnswering.from_pretrained("AndyChiang/Pre-CoFactv3-Question-Answering")
 tokenizer = AutoTokenizer.from_pretrained("AndyChiang/Pre-CoFactv3-Question-Answering")
 
