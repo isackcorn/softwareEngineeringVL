@@ -14,8 +14,13 @@ pip install streamlit
 ## Использование
 - Клонируйте или загрузите репозиторий на свой локальный компьютер или в удаленный репозиторий.
 - Если используется облако Streamlit, укажите при развертывании приложения путь до исполняемого файла.
-- Запустите программу 'app.py' локально, или в виде Web-приложения на Streamlit.
+- Запустите программу `app.py` локально, или в виде Web-приложения на Streamlit.
 - Введите контекст и вопрос по запросу от программы
+
+## Пример использования
+В качестве примера использования можно посмотреть развернутое на Streamlit [приложение](https://softwareengineeringvl-xexb2cqut3l9mrdydqbsxs.streamlit.app/)
+
+Если у Вас не работают гиперссылки: https://softwareengineeringvl-xexb2cqut3l9mrdydqbsxs.streamlit.app/
 
 ### Используемая модель
 Используется предобученная модель: [Pre-CoFactv3-Question-Answering](https://huggingface.co/AndyChiang/Pre-CoFactv3-Question-Answering)
