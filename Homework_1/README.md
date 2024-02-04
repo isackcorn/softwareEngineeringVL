@@ -15,4 +15,7 @@ pip install torch
 - Введите контекст и вопрос по запросу от программы
 
 ### Используемые библиотеки
-Используется предобученная [модель] (https://huggingface.co/AndyChiang/Pre-CoFactv3-Question-Answering):
+Используется предобученная модель: [Pre-CoFactv3-Question-Answering](https://huggingface.co/AndyChiang/Pre-CoFactv3-Question-Answering):
+
+### Автор
+Лобачев В.И., РИМ-130962
